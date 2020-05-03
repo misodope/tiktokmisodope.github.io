@@ -1,0 +1,43 @@
+@import '../styles/mixins';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css');
+
+.social {
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  @include tablet {
+    flex-direction: column;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid black;
+    margin-right: 10px;
+    padding-right: 10px;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    @include mobile {
+      border-right: none;
+    }
+
+    @include tablet {
+      border-right: none;
+    }
+  }
+
+  img {
+    margin-bottom: 0;
+    margin-right: 5px;
+  }
+
+  a {
+    color: black;
+  }
+}

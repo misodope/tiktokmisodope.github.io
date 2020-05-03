@@ -1,0 +1,96 @@
+@import '../styles/mixins';
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Sans+Pro&display=swap');
+
+body {
+  background: #fece09 !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Merriweather', serif;
+}
+
+.main {
+  background: #fece09 !important;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+
+    @include mobile {
+      padding-left: 0;
+      padding-top: 50px;
+    }
+
+    @include tablet {
+      padding-left: 0;
+    }
+  }
+
+  &__name {
+    font-size: 15vw;
+    z-index: 999;
+    color: white;
+
+    span {
+      &:first-child {
+        color: black;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__secondary-title {
+  }
+
+  &__social-footer {
+    padding: 50px;
+  }
+
+  &__logo {
+    background-image: url("../images/misodope_black_logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 25vw;
+    height: 25vw;
+    bottom: 150px;
+    position: relative;
+    background-position: 50% 50%;
+    border-radius: 100%;
+    
+    @include mobile {
+      bottom: 50px;
+    }
+
+    @include tablet {
+      bottom: 100px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__about {
+    text-align: right;
+    position: relative;
+    font-size: 4vw;
+    line-height: 5vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 85%;
+  }
+
+  &__about-2 {
+    text-align: left;
+    position: relative;
+    font-size: 4vw;
+    line-height: 5vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 85%;
+    margin-top: 100px;
+  }
+}
