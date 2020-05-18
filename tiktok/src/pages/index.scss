@@ -1,37 +1,60 @@
-@import '../styles/mixins';
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Sans+Pro&display=swap');
+@import "../styles/mixins";
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Sans+Pro&display=swap");
 
 body {
   background: #fece09 !important;
+  max-width: 1600px;
+  margin: 0 auto !important;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Merriweather', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Sans Pro", sans-serif !important;
 }
 
 .main {
   background: #fece09 !important;
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  @include tablet {
+    flex-direction: column;
+  }
 
   &__container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 100px;
+    justify-content: center;
+    width: 50%;
 
     @include mobile {
       padding-left: 0;
-      padding-top: 50px;
+      width: 100%;
     }
 
     @include tablet {
       padding-left: 0;
+      width: 100%;
     }
   }
 
-  &__name {
-    font-size: 15vw;
+  &__description {
+    font-size: 6vh;
+    line-height: 1.45;
     z-index: 999;
-    color: white;
+
+    @include mobile {
+      font-size: 5vh;
+    }
 
     span {
       &:first-child {
@@ -45,52 +68,56 @@ h1,h2,h3,h4,h5,h6 {
   }
 
   &__social-footer {
-    padding: 50px;
-  }
+    font-weight: 600;
+    margin-top: 50px;
 
-  &__logo {
-    background-image: url("../images/misodope_black_logo.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 25vw;
-    height: 25vw;
-    bottom: 150px;
-    position: relative;
-    background-position: 50% 50%;
-    border-radius: 100%;
-    
     @include mobile {
-      bottom: 50px;
-    }
-
-    @include tablet {
-      bottom: 100px;
+      margin-top: 25px;
     }
   }
 
   &__header {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
   }
 
   &__about {
-    text-align: right;
-    position: relative;
-    font-size: 4vw;
-    line-height: 5vw;
-    font-family: 'Source Sans Pro', sans-serif;
-    width: 85%;
+    font-size: 2vh;
+    line-height: 2.25;
+    font-weight: 600;
+
+    font-family: "Source Sans Pro", sans-serif !important;
+
+    @include mobile {
+      font-weight: 600;
+      font-size: 2vh;
+    }
   }
 
-  &__about-2 {
-    text-align: left;
-    position: relative;
-    font-size: 4vw;
-    line-height: 5vw;
-    font-family: 'Source Sans Pro', sans-serif;
-    width: 85%;
-    margin-top: 100px;
+  &__video {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mobile {
+      display: none;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__tiktok-link {
+    transition: color 0.5s ease;
+
+    &:visited {
+      color: black;
+    }
+
+    &:hover {
+      color: white;
+      transition: color 0.5s ease;
+    }
   }
 }

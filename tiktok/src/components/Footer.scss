@@ -1,0 +1,22 @@
+@import "../styles/mixins";
+
+.footer {
+  padding: 20px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 50px;
+
+  &__content {
+    color: #fdcd31;
+    font-weight: 900;
+    font-family: "Source Sans Pro", sans-serif !important;
+    font-size: 18px;
+  }
+}

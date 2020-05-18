@@ -1,18 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Sans+Pro&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Sans+Pro&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css");
 
 body {
   max-width: 1600px;
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 
-
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Merriweather', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", serif;
 }
 
-div, p {
-  font-family: 'Source Sans Pro', sans-serif;
+div,
+p {
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .hidden {

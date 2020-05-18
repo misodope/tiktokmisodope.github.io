@@ -1,14 +1,10 @@
-@import '../styles/mixins';
-@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css');
+@import "../styles/mixins";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css");
 
 .social {
   display: flex;
 
   @include mobile {
-    flex-direction: column;
-  }
-
-  @include tablet {
     flex-direction: column;
   }
 
@@ -24,10 +20,6 @@
     }
 
     @include mobile {
-      border-right: none;
-    }
-
-    @include tablet {
       border-right: none;
     }
   }

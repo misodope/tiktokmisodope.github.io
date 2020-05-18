@@ -1,0 +1,18 @@
+.tiktok {
+  position: relative;
+
+  &__background {
+    width: 320px;
+    height: 540px;
+    background-color: #fdc200;
+    border-radius: 70px;
+  }
+
+  &__image {
+    width: 320px;
+    height: 540px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+}

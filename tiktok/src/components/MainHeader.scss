@@ -1,0 +1,17 @@
+@import "../styles/mixins";
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+
+  &__logo {
+    width: 6vw;
+    height: 6vw;
+
+    @include mobile {
+      width: 20vw;
+      height: 20vw;
+    }
+  }
+}
