@@ -4,24 +4,17 @@
 .social {
   display: flex;
 
-  @include mobile {
-    flex-direction: column;
-  }
-
   &__icon {
     display: flex;
     align-items: center;
-    border-right: 1px solid black;
     margin-right: 10px;
-    padding-right: 10px;
+    margin-bottom: 10px;
+    border-right: none;
 
     &:last-child {
       border-right: none;
     }
 
-    @include mobile {
-      border-right: none;
-    }
   }
 
   img {

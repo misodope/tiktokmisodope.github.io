@@ -1,0 +1,54 @@
+@import "../styles/mixins";
+
+.emails {
+  margin-top: 15px;
+
+  &__container {
+    display: flex;
+
+    @include mobile {
+    }
+
+    input {
+      border: 1px solid $main-blue;
+      width: 140px;
+      height: 33px;
+      padding: 0 10px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        color: $main-blue;
+      }
+    }
+
+    button {
+      background-color: $main-blue;
+      color: white;
+      width: 93px;
+      height: 35px;
+      border: none;
+      margin-left: 15px;
+      cursor: pointer;
+
+      @include mobile {
+        margin-left: 10px;
+      }
+
+      &:disabled {
+        cursor: default;
+      }
+    }
+  }
+
+  &__loader {
+    z-index: 9999;
+    animation: spinner 2s linear infinite;
+  }
+
+  &__success {
+    font-family: "Source Sans Pro", sans-serif !important;
+  }
+}
