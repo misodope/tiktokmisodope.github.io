@@ -21,21 +21,8 @@ const IndexPage = () => (
             TikTok<br />Content Creator
           </h1>
         </div>
-<<<<<<< HEAD
-        <div className="main__about">
-          Don't forget to check out new videos daily.
-          <br />
-          Join our family and don't forget to follow for more content.
-          <br />
-          <a className="main__asus" href="https://bit.ly/tt-ASUSxmisodope">ASUS ProArt Monitors</a>
-        </div>
-        <Emails />
-        <div className="main__social-footer">
-          <Social />
-=======
         <div className="main__join">
           Join our family and subscribe for more content.
->>>>>>> fe0991f230243a0cb33196e57671536de4efde2c
         </div>
         <Emails />
       </div>

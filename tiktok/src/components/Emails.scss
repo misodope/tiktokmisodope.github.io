@@ -7,17 +7,6 @@
     display: flex;
 
     @include mobile {
-<<<<<<< HEAD
-      flex-direction: column;
-    }
-
-    input {
-      border-radius: 15px;
-      border: 1px solid #fdcd31;
-      width: 260px;
-      height: 45px;
-      padding: 10px;
-=======
     }
 
     input {
@@ -25,45 +14,27 @@
       width: 140px;
       height: 33px;
       padding: 0 10px;
->>>>>>> fe0991f230243a0cb33196e57671536de4efde2c
 
       &:focus {
         outline: none;
       }
 
       &::placeholder {
-<<<<<<< HEAD
-        color: #fdcd31;
-=======
         color: $main-blue;
->>>>>>> fe0991f230243a0cb33196e57671536de4efde2c
       }
     }
 
     button {
-<<<<<<< HEAD
-      border-radius: 15px;
-      background-color: #fdc200;
-      color: white;
-      width: 100px;
-      height: 45px;
-=======
       background-color: $main-blue;
       color: white;
       width: 93px;
       height: 35px;
->>>>>>> fe0991f230243a0cb33196e57671536de4efde2c
       border: none;
       margin-left: 15px;
       cursor: pointer;
 
       @include mobile {
-<<<<<<< HEAD
-        margin-left: 0;
-        margin-top: 10px;
-=======
         margin-left: 10px;
->>>>>>> fe0991f230243a0cb33196e57671536de4efde2c
       }
 
       &:disabled {

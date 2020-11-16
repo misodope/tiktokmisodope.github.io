@@ -9,10 +9,7 @@ body {
   background: #fece09 !important;
   max-width: 1600px;
   margin: 0 auto !important;
-<<<<<<< HEAD
-=======
   font-size: 12px;
->>>>>>> fe0991f230243a0cb33196e57671536de4efde2c
 
   @include mobile {
     overflow: initial;
@@ -66,14 +63,11 @@ div {
     line-height: 1.45;
     z-index: 999;
     letter-spacing: 1.5px;
-<<<<<<< HEAD
-=======
     margin-bottom: 30px;
 
     &:first-of-type {
       margin-bottom: 20px;
     }
->>>>>>> fe0991f230243a0cb33196e57671536de4efde2c
 
     @include mobile {
       font-size: 36px;
