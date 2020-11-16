@@ -1,3 +1,10 @@
+/* Define an animation behavior */
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .tiktok {
   position: relative;
 
@@ -14,5 +21,51 @@
     position: absolute;
     top: 20px;
     left: 20px;
+  }
+
+  &__container {
+    display: block;
+    transition: display 1s ease;
+
+    &--hide {
+      display: none;
+      transition: display 1s ease;
+    }
+  }
+
+  &__close {
+    display: none;
+
+    &--show {
+      display: block;
+      position: relative;
+      left: 240px;
+      bottom: 20px;
+    }
+  }
+
+  &__play {
+    z-index: 9999;
+    position: absolute;
+    top: 270px;
+    left: 150px;
+    cursor: pointer;
+
+    &--hide {
+      display: none;
+    }
+  }
+
+  &__loader {
+    z-index: 9999;
+    position: absolute;
+    top: 270px;
+    left: 150px;
+    display: none;
+    animation: spinner 2s linear infinite;
+
+    &--show {
+      display: block;
+    }
   }
 }

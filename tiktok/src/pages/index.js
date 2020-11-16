@@ -5,8 +5,8 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Social } from "../components/Social";
-import MainHeader from "../components/MainHeader";
 import TikTok from "../components/TikTok";
+import Emails from "../components/Emails";
 
 const IndexPage = () => (
   <Layout>
@@ -26,15 +26,17 @@ const IndexPage = () => (
           </h1>
         </div>
         <div className="main__about">
-          Don't forget to check out new videos daily!
+          Don't forget to check out new videos daily.
           <br />
-          Site is still under construction
+          Join our family and don't forget to follow for more content.
+          <br />
+          <a className="main__asus" href="https://bit.ly/tt-ASUSxmisodope">ASUS ProArt Monitors</a>
         </div>
+        <Emails />
         <div className="main__social-footer">
           <Social />
         </div>
       </div>
-
       <div className="main__video">
         <TikTok />
       </div>

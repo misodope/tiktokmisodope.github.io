@@ -1,0 +1,11 @@
+.tiktok-video {
+  display: none;
+
+  &__show {
+    display: block;
+    transition: display 1s ease-in;
+    position: absolute;
+    left: -100px;
+    top: -10px;
+  }
+}
