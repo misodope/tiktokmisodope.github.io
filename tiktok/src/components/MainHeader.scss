@@ -7,6 +7,10 @@
   flex-direction: column;
   margin-top: 40px;
 
+  @include desktop {
+    align-items: flex-start;
+  }
+
   &__logo {
     @include mobile {
       width: 120px;
@@ -16,5 +20,22 @@
 
   &__username {
     margin: 5px 0 15px;
+  }
+}
+
+.mobile-header {
+  @include desktop {
+    display: none;
+  }
+}
+
+.desktop-header {
+  &__logo {
+    width: 62px;
+    height: 62px;
+  }
+
+  @include mobile {
+    display: none;
   }
 }

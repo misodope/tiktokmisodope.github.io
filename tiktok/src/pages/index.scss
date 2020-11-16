@@ -1,19 +1,21 @@
 @import "../styles/mixins";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;900&display=swap");
 
-$main-blue: #13509d;
-$background-blue: #08296b;
-$yellow: #fdcd31;
-
 body {
-  background: #fece09 !important;
+  background: #fece09;
   max-width: 1600px;
   margin: 0 auto !important;
   font-size: 12px;
+  padding: 0 90px;
+
+  @include desktop {
+    background: linear-gradient(90deg, $yellow 60%, $background-blue 50%);
+  }
 
   @include mobile {
     overflow: initial;
     max-height: initial;
+    padding: 0;
   }
 }
 
@@ -29,10 +31,14 @@ div {
   margin: 0;
 }
 
-.main {
-  background: $yellow !important;
-  display: flex;
+.portrait {
+  height: 940px;
+  position: fixed;
+  bottom: -5px;
+  right: 280px;
+}
 
+.main {
   @include mobile {
     flex-direction: column;
   }

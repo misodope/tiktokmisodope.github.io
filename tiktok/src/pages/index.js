@@ -7,11 +7,14 @@ import SEO from "../components/seo";
 import { Social } from "../components/Social";
 import TikTok from "../components/TikTok";
 import Emails from "../components/Emails";
+import portrait from "../images/jerry@3x.png"
 
 const IndexPage = () => (
   <Layout>
     <div className="main">
       <SEO title="Home" />
+      <img className="portrait" src={portrait}/>
+      <div>MISODOPE</div>
       <div className="main__container animated fadeIn">
         <div className="main__header">
           <h1 className="main__description">
@@ -26,8 +29,8 @@ const IndexPage = () => (
         </div>
         <Emails />
       </div>
-      <div className="main__video">
-        <TikTok />
+      <div>
+        test
       </div>
     </div>
   </Layout>
