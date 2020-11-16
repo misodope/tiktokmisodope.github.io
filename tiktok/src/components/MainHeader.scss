@@ -3,15 +3,18 @@
 .header {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
 
   &__logo {
-    width: 6vw;
-    height: 6vw;
-
     @include mobile {
-      width: 20vw;
-      height: 20vw;
+      width: 120px;
+      height: 120px;
     }
+  }
+
+  &__username {
+    margin: 5px 0 15px;
   }
 }

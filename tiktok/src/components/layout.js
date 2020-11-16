@@ -8,7 +8,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import "./layout.css";
 import { Container } from "./Container";
 import MainHeader from "./MainHeader";
 import Footer from "./Footer";
@@ -20,7 +19,6 @@ const Layout = ({ children }) => {
       <Container>
         <main>{children}</main>
       </Container>
-      <Footer />
     </>
   );
 };

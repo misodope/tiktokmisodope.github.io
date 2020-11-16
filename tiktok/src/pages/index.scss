@@ -1,10 +1,18 @@
 @import "../styles/mixins";
-@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;900&display=swap");
+
+$main-blue: #13509d;
+$background-blue: #08296b;
+$yellow: #fdcd31;
 
 body {
   background: #fece09 !important;
   max-width: 1600px;
   margin: 0 auto !important;
+<<<<<<< HEAD
+=======
+  font-size: 12px;
+>>>>>>> fe0991f230243a0cb33196e57671536de4efde2c
 
   @include mobile {
     overflow: initial;
@@ -17,12 +25,15 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: "Source Sans Pro", sans-serif !important;
+h6,
+div {
+  font-family: 'Nunito', sans-serif !important;
+  color: $main-blue;
+  margin: 0;
 }
 
 .main {
-  background: #fece09 !important;
+  background: $yellow !important;
   display: flex;
 
   @include mobile {
@@ -55,9 +66,17 @@ h6 {
     line-height: 1.45;
     z-index: 999;
     letter-spacing: 1.5px;
+<<<<<<< HEAD
+=======
+    margin-bottom: 30px;
+
+    &:first-of-type {
+      margin-bottom: 20px;
+    }
+>>>>>>> fe0991f230243a0cb33196e57671536de4efde2c
 
     @include mobile {
-      font-size: 5vh;
+      font-size: 36px;
     }
 
     span {
@@ -77,20 +96,13 @@ h6 {
     }
   }
 
-  &__header {
-    display: flex;
-  }
 
-  &__about {
-    font-size: 2vh;
-    line-height: 2.25;
-    font-weight: 600;
-
-    font-family: "Source Sans Pro", sans-serif !important;
+  &__join {
+    font-family: 'Nunito', sans-serif !important;
 
     @include mobile {
-      font-weight: 600;
-      font-size: 2vh;
+      font-weight: 400;
+      font-size: 1rem;
     }
   }
 

@@ -15,16 +15,13 @@ const IndexPage = () => (
       <div className="main__container animated fadeIn">
         <div className="main__header">
           <h1 className="main__description">
-            Hi I'm Jerri,
-            <br />
-            I like to make video <br />
-            content on{" "}
-            <a className="main__tiktok-link" href="https://www.tiktok.com/@misodope/">
-              TikTok
-            </a>{" "}
-            <br />& build Software.
+            Full Stack<br />Developer
+          </h1>
+          <h1 className="main__description">
+            TikTok<br />Content Creator
           </h1>
         </div>
+<<<<<<< HEAD
         <div className="main__about">
           Don't forget to check out new videos daily.
           <br />
@@ -35,7 +32,12 @@ const IndexPage = () => (
         <Emails />
         <div className="main__social-footer">
           <Social />
+=======
+        <div className="main__join">
+          Join our family and subscribe for more content.
+>>>>>>> fe0991f230243a0cb33196e57671536de4efde2c
         </div>
+        <Emails />
       </div>
       <div className="main__video">
         <TikTok />
