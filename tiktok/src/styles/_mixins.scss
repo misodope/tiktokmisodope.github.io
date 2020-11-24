@@ -1,6 +1,7 @@
 $tablet-width: 768px;
 $desktop-width: 1024px;
 $mobile-width: 480px;
+$large-deskop-width: 2200px;
 
 $main-blue: #13509d;
 $background-blue: #08296b;
@@ -14,6 +15,12 @@ $yellow: #fdcd31;
 
 @mixin desktop {
   @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin large-desktop {
+  @media(min-width: #{$large-deskop-width}) {
     @content;
   }
 }

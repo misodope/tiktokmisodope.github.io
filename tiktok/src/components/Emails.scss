@@ -14,6 +14,7 @@
       width: 140px;
       height: 33px;
       padding: 0 10px;
+      border-radius: 5px;
 
       &:focus {
         outline: none;
@@ -32,6 +33,7 @@
       border: none;
       margin-left: 15px;
       cursor: pointer;
+      border-radius: 5px;
 
       @include mobile {
         margin-left: 10px;

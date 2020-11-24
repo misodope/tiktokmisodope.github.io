@@ -2,9 +2,12 @@
 
 .container {
   padding: 0 80px;
-  margin-bottom: 5%;
 
   @include mobile {
+    padding: 0;
+  }
+
+  @include tablet {
     padding: 0;
   }
 }

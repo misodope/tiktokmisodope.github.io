@@ -4,18 +4,15 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { Social } from "../components/Social";
-import TikTok from "../components/TikTok";
 import Emails from "../components/Emails";
-import portrait from "../images/jerry@3x.png"
+import { Links } from "../components/Links";
 
 const IndexPage = () => (
   <Layout>
     <div className="main">
       <SEO title="Home" />
-      <img className="portrait" src={portrait}/>
-      <div>MISODOPE</div>
       <div className="main__container animated fadeIn">
+        <div className="desktop-title desktop-title-miso">MISO</div>
         <div className="main__header">
           <h1 className="main__description">
             Full Stack<br />Developer
@@ -29,8 +26,9 @@ const IndexPage = () => (
         </div>
         <Emails />
       </div>
-      <div>
-        test
+      <div className="main__container animated fadeIn">
+        <div className="desktop-title desktop-title-dope">DOPE</div>
+        <Links/>
       </div>
     </div>
   </Layout>

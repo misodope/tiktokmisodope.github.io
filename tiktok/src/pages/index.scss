@@ -1,21 +1,57 @@
 @import "../styles/mixins";
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;900&display=swap");
 
 body {
-  background: #fece09;
   max-width: 1600px;
   margin: 0 auto !important;
   font-size: 12px;
   padding: 0 90px;
 
   @include desktop {
-    background: linear-gradient(90deg, $yellow 60%, $background-blue 50%);
+    background: url("../images/jerry@3x.png") center bottom -10px no-repeat, linear-gradient(90deg, $yellow 50vw, $background-blue 50vw);
+    background-size: 60vw, auto;
+    background-attachment: fixed;
   }
-
+  @include large-desktop {
+    background-size: 40vw, auto;
+  }
   @include mobile {
     overflow: initial;
     max-height: initial;
-    padding: 0;
+    padding: 0 30px;
+    background: $yellow;
+  }
+
+  @include tablet {
+    background: $yellow;
+    padding: 0 30px;
+  }
+}
+
+.desktop-title {
+  font-size: 8vw;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0);
+  position: relative;
+  bottom: 50px;
+
+  &-miso {
+    text-align: right;
+    -webkit-text-stroke: 5px $main-blue;
+    margin-right: 10px;
+  }
+
+  &-dope {
+    -webkit-text-stroke: 5px #fdd500;
+    margin-left: 10px;
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
   }
 }
 
@@ -26,16 +62,9 @@ h4,
 h5,
 h6,
 div {
-  font-family: 'Nunito', sans-serif !important;
+  font-family: 'Nunito Sans', sans-serif !important;
   color: $main-blue;
   margin: 0;
-}
-
-.portrait {
-  height: 940px;
-  position: fixed;
-  bottom: -5px;
-  right: 280px;
 }
 
 .main {
@@ -47,11 +76,14 @@ div {
     flex-direction: column;
   }
 
+  @include desktop {
+    display: flex;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 70%;
+    width: 50%;
 
     @include mobile {
       padding-left: 0;
@@ -61,6 +93,25 @@ div {
     @include tablet {
       padding-left: 0;
       width: 100%;
+    }
+
+    &:last-child {
+      @include mobile {
+        background-color: $background-blue;
+        padding: 30px;
+        margin: 0 -30px -30px -30px;
+        min-height: 30vh;
+        margin-top: 30px;
+      }
+
+      @include tablet {
+        background-color: $background-blue;
+        padding: 30px;
+        margin: 0 -30px -30px -30px;
+        min-height: 30vh;
+        margin-top: 30px;
+      }
+
     }
   }
 
@@ -98,7 +149,7 @@ div {
 
 
   &__join {
-    font-family: 'Nunito', sans-serif !important;
+    font-family: 'Nunito Sans', sans-serif !important;
 
     @include mobile {
       font-weight: 400;
@@ -142,4 +193,8 @@ div {
       transition: color 0.5s ease;
     }
   }
+}
+
+a {
+  text-decoration: none;
 }
