@@ -13,7 +13,7 @@ body {
     background-attachment: fixed;
   }
   @include large-desktop {
-    background-size: 40vw, auto;
+    background-size: 8vw, auto;
   }
   @include mobile {
     overflow: initial;
