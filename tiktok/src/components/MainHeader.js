@@ -15,6 +15,7 @@ const MainHeader = () => {
       </div>
       <div className="desktop-header">
         <img className="desktop-header__logo" src={misodope}/>
+        <Social />
       </div>
     </div>
   );

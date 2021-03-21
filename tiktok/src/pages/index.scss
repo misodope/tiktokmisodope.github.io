@@ -8,8 +8,8 @@ body {
   padding: 0 90px;
 
   @include desktop {
-    background: url("../images/jerry@3x.png") center bottom -10px no-repeat, linear-gradient(90deg, $yellow 50vw, $background-blue 50vw);
-    background-size: 60vw, auto;
+    background: url("../images/head@3x.png") center top 250px no-repeat, linear-gradient(90deg, $yellow 50vw, $background-blue 50vw);
+    background-size: 10vw, auto;
     background-attachment: fixed;
   }
   @include large-desktop {

@@ -34,6 +34,20 @@
 }
 
 .desktop-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .social {
+    z-index: 9999;
+    margin-left: 10px;
+    position: relative;
+
+    &__icon {
+      margin-bottom: 0;
+    }
+  }
+
   &__logo {
     width: 62px;
     height: 62px;
