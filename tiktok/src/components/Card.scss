@@ -1,9 +1,9 @@
-@import '../styles/mixins';
+@import "../styles/mixins";
 
 .card {
   display: flex;
   margin: 20px 0;
-  
+
   img {
     height: 350px;
     width: 400px;
@@ -22,7 +22,7 @@
   &__details {
     display: flex;
     flex-direction: column;
-    
+
     @include mobile {
       display: none;
     }
@@ -33,8 +33,8 @@
 
     &--tech {
       > span {
-        background: black;
-        color: white;
+        background: #000;
+        color: #fff;
         padding: 10px;
         margin-right: 5px;
         border-radius: 10px;
