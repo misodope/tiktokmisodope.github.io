@@ -46,6 +46,14 @@
     &__icon {
       margin-bottom: 0;
     }
+
+    @include mobile {
+      display: none;
+    }
+
+    @include tablet {
+      display: none;
+    }
   }
 
   &__logo {
@@ -54,6 +62,10 @@
   }
 
   @include mobile {
+    display: none;
+  }
+
+  @include tablet {
     display: none;
   }
 }
