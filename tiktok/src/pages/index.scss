@@ -8,7 +8,7 @@ body {
   padding: 0 90px;
 
   @include desktop {
-    background: url("../images/head@3x.png") center top 250px no-repeat, linear-gradient(90deg, $yellow 50vw, $background-blue 50vw);
+    background: $yellow;
     background-size: 10vw, auto;
     background-attachment: fixed;
   }

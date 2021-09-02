@@ -21,10 +21,6 @@ const IndexPage = () => (
             TikTok<br />Content Creator
           </h1>
         </div>
-        <div className="main__join">
-          Join our family and subscribe for more content.
-        </div>
-        <Emails />
       </div>
       <div className="main__container animated fadeIn">
         <div className="desktop-title desktop-title-dope">DOPE</div>

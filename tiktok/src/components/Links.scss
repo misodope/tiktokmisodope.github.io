@@ -16,18 +16,18 @@
     margin: 10px 0;
     padding: 10px;
     text-align: center;
-    background-color: white;
-    color: black;
+    background-color: $main-blue;
+    color: white;
     font-weight: 600;
     transition: background-color 0.5s, color 0.5s;
 
     &:visited {
-      color: black;
+      color: white;
     }
 
     &:hover {
       background-color: initial;
-      color: white;
+      color: $main-blue;
       transition: background-color 0.5s, color 0.5s;
     }
   }

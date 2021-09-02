@@ -58,7 +58,14 @@ const Emails = () => {
 
   const renderEmail = sent ? emailSuccess : emailInput;
 
-  return <div className="emails">{renderEmail}</div>;
+  return (
+    <>
+      <div className="main__join">
+        Join our family and subscribe for more content.
+      </div>
+      <div className="emails">{renderEmail}</div>;
+    </>
+  )
 };
 
 export default Emails;
