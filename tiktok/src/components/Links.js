@@ -54,7 +54,7 @@ export const Links = () => {
   });
 
   return (
-    <div className="links">
+    <div className="links w-full">
       {linkElements}
     </div>
   );

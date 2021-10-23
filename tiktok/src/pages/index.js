@@ -9,13 +9,9 @@ import { Links } from "../components/Links";
 
 const IndexPage = () => (
   <Layout>
-    <div className="main">
-      <SEO title="Home" />
-      <div className="main__container animated fadeIn">
-      </div>
-      <div className="main__container animated fadeIn">
-        <Links/>
-      </div>
+    <SEO title="Home" />
+    <div className="flex justify-center animated fadeIn">
+      <Links/>
     </div>
   </Layout>
 );
