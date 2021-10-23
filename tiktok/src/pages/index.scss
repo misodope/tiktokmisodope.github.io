@@ -80,41 +80,6 @@ div {
     display: flex;
   }
 
-  &__container {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-
-    @include mobile {
-      padding-left: 0;
-      width: 100%;
-    }
-
-    @include tablet {
-      padding-left: 0;
-      width: 100%;
-    }
-
-    &:last-child {
-      @include mobile {
-        background-color: $background-blue;
-        padding: 30px;
-        margin: 0 -30px -30px -30px;
-        min-height: 30vh;
-        margin-top: 30px;
-      }
-
-      @include tablet {
-        background-color: $background-blue;
-        padding: 30px;
-        margin: 0 -30px -30px -30px;
-        min-height: 30vh;
-        margin-top: 30px;
-      }
-
-    }
-  }
-
   &__description {
     font-size: 6vh;
     line-height: 1.45;

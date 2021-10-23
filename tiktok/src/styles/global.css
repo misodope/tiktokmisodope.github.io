@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Sans+Pro&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   max-width: 1600px;
   margin: 0 auto !important;
