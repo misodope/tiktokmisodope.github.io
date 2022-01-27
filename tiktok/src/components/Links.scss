@@ -11,23 +11,22 @@
   }
 
   .link {
-    border: 2px white solid;
     border-radius: 5px;
     margin: 10px 0;
     padding: 10px;
     text-align: left;
-    background-color: $main-blue;
-    color: white;
+    background-color: $yellow;
+    color: $black;
     font-weight: 600;
     transition: background-color 0.5s, color 0.5s;
 
     &:visited {
-      color: white;
+      color: $black;
     }
 
     &:hover {
       background-color: initial;
-      color: $main-blue;
+      color: $yellow;
       transition: background-color 0.5s, color 0.5s;
     }
   }

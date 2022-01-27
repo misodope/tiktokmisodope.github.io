@@ -4,8 +4,8 @@ $mobile-width: 480px;
 $large-deskop-width: 2200px;
 
 $main-blue: #81b2ee;
-$background-blue: #08296b;
-$yellow: #fdcd31;
+$black: #000;
+$yellow: #FBD91D;
 
 @mixin tablet {
   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {

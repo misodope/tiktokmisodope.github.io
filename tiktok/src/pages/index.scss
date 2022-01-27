@@ -8,7 +8,7 @@ body {
   padding: 0 90px;
 
   @include desktop {
-    background: $yellow;
+    background: $black;
     background-size: 10vw, auto;
     background-attachment: fixed;
   }
@@ -19,11 +19,11 @@ body {
     overflow: initial;
     max-height: initial;
     padding: 0 30px;
-    background: $yellow;
+    background: $black;
   }
 
   @include tablet {
-    background: $yellow;
+    background: $black;
     padding: 0 30px;
   }
 }
@@ -36,6 +36,6 @@ h5,
 h6,
 div {
   font-family: 'Nunito Sans', sans-serif !important;
-  color: $main-blue;
+  color: $yellow;
   margin: 0;
 }

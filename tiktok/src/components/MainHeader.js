@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../images/head@3x.png";
+import logo from "../images/misodope_logo_169.png";
 import "./MainHeader.scss";
 
 
@@ -7,14 +7,15 @@ const MainHeader = () => {
   return (
     <div className="header">
       <div className="mobile-header">
-        <img className="w-20 h-20" src={logo} alt="logo" />
-        <div className="">@misodope</div>
-        <div className="text-lg flex flex-col items-center">
-          E-mail for all business inquiries:
-          <a className="flex items-center font-bold" href="mailto:jerry@misodope.com">
-            <img className="w-8 h-8 mr-2" src="https://img.icons8.com/color/48/000000/message-squared.png"/>
-            jerry@misodope.com
-          </a>
+        <img className="w-30 h-30" src={logo} alt="logo" />
+        <div className="text-xl tracking-wider">@MisoDope</div>
+        <div className="text-sm flex flex-col items-center">
+          <p>Digital Creator</p>
+          <p>Full Stack Engineer</p>
+        </div>
+        <div className="flex flex-col items-center text-sm my-4">
+          <p>E-mail for all business inquiries</p>
+          <a>jerry@misodope.com</a>
         </div>
       </div>
     </div>
