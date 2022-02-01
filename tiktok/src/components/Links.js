@@ -7,29 +7,14 @@ import FlexiSpot from "../images/FlexiSpot.png";
 
 const linkData = [
   {
-    icon: zipRecruiterIcon,
-    title: 'Join ZipRecruiter and get employed',
-    url: 'https://www.ziprecruiter.com/misodope',
-  },
-  {
     icon: blind,
     title: 'Download the Blind App',
     url: 'https://teamblind.onelink.me/enIS/misodope',
   },
   {
-    icon: "https://img.icons8.com/color/48/000000/tiktok--v1.png",
-    title: `Going for 500K LETS GOOO!!`,
+    icon: zipRecruiterIcon,
+    title: 'Join ZipRecruiter and get employed',
     url: 'https://www.ziprecruiter.com/misodope',
-  },
-  {
-    icon: "https://img.icons8.com/color/48/000000/instagram-new--v1.png",
-    title: "see a more daily part of my life",
-    url: 'https://www.instagram.com/miso.dope/',
-  },
-  {
-    icon: "https://img.icons8.com/color/48/000000/youtube-play.png",
-    title: "Checkout my YouTube!!",
-    url: 'https://www.youtube.com/misodope',
   },
   {
     icon: aa,
