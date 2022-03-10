@@ -9,7 +9,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { Container } from "./Container";
-import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   return (
@@ -17,7 +16,6 @@ const Layout = ({ children }) => {
       <Container>
         <main>{children}</main>
       </Container>
-      <Footer />
     </>
   );
 };

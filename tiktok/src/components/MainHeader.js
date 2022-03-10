@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "@images/Head2022.png";
+import profile from "@images/Head2022.png";
+import logo from "@images/misodope_logo_169.png";
 import "./MainHeader.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -8,8 +9,8 @@ const MainHeader = () => {
   return (
     <div className="header">
       <div className="mobile-header">
-        <img className="w-32 h-32 mb-5" src={logo} alt="logo" />
-        <div className="text-xl tracking-wider">@MisoDope</div>
+        <img className="w-32 h-32 mb-5" src={profile} alt="profile picture" />
+        <p className="text-xl tracking-wider flex justify-center items-center">@MisoDope</p>
         <div className="text-sm flex flex-col items-center">
           <p>Digital Creator</p>
           <p>Full Stack Engineer</p>
