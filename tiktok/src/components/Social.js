@@ -22,7 +22,7 @@ const socialObject = {
 
 export const Social = () => {
   const socials = Object.keys(socialObject).map((social, _) => (
-    <div key={social} className={`social__icon animated fadeIn`}>
+    <div key={social} className="flex justify-center items-center my-6">
       {socialObject[social].name}
     </div>
   ));
