@@ -5,19 +5,19 @@ import { faTiktok, faYoutube, faDiscord, faGithub, faInstagram } from "@fortawes
 
 const socialObject = {
   tiktok: {
-    icon: <a href="https://www.tiktok.com/@misodope/"><FontAwesomeIcon icon={faTiktok} className="h-10 w-10"/></a>,
+    icon: <a href="https://www.tiktok.com/@misodope/"><FontAwesomeIcon icon={faTiktok} className="h-10 w-10" role="button" aria-label="Link to TikTok"/></a>,
   },
   instagram: {
-    icon: <a href="https://www.instagram.com/miso.dope/"><FontAwesomeIcon icon={faInstagram} className="h-10 w-10"/></a>,
+    icon: <a href="https://www.instagram.com/miso.dope/"><FontAwesomeIcon icon={faInstagram} className="h-10 w-10" role="button" aria-label="Link to Instagram"/></a>,
   },
   youtube: {
-    icon: <a href="https://www.youtube.com/misodope/"><FontAwesomeIcon icon={faYoutube} className="h-10 w-10"/></a>,
+    icon: <a href="https://www.youtube.com/misodope/"><FontAwesomeIcon icon={faYoutube} className="h-10 w-10" role="button" aria-label="Link to YouTube"/></a>,
   },
   github: {
-    icon: <a href="https://github.com/misodope"><FontAwesomeIcon icon={faGithub} className="h-10 w-10"/></a>,
+    icon: <a href="https://github.com/misodope"><FontAwesomeIcon icon={faGithub} className="h-10 w-10" role="button" aria-label="Link to Github"/></a>,
   },
   discord: {
-    icon: <a href="https://discord.gg/2FS5rsM"><FontAwesomeIcon icon={faDiscord} className="h-10 w-10"/></a>
+    icon: <a href="https://discord.gg/2FS5rsM"><FontAwesomeIcon icon={faDiscord} className="h-10 w-10" role="button" aria-label="Link to Discord"/></a>
   },
 };
 
