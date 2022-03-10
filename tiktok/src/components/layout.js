@@ -9,13 +9,11 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { Container } from "./Container";
-import MainHeader from "./MainHeader";
 import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   return (
     <>
-      <MainHeader />
       <Container>
         <main>{children}</main>
       </Container>
