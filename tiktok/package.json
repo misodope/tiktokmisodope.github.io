@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "gatsby-plugin-root-import": "^2.0.8",
-    "prettier": "^1.19.1"
+    "prettier": "1.19.1"
   },
   "keywords": [
     "gatsby"
