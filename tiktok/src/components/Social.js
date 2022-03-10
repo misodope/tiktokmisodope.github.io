@@ -1,31 +1,32 @@
 import "./Social.scss";
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTiktok, faYoutube, faDiscord, faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const socialObject = {
-  discord: {
-    icon: <img src="https://img.icons8.com/ios/50/FFFFFF/discord-logo.png" alt="Discord"/>,
-    name: <a href="https://discord.gg/2FS5rsM"><img src="https://img.icons8.com/ios/24/13509d/discord-logo.png" alt="Discord"/></a>
-  },
   tiktok: {
-    icon: <img src="https://img.icons8.com/ios/50/FFFFFF/tiktok.png" alt="Tiktok" />,
-    name: <a href="https://www.tiktok.com/@misodope/"><img src="https://img.icons8.com/ios/24/13509d/tiktok.png" alt="Tiktok" /></a>,
+    icon: <a href="https://www.tiktok.com/@misodope/"><FontAwesomeIcon icon={faTiktok} className="h-10 w-10"/></a>,
   },
   instagram: {
-    icon: <img src="https://img.icons8.com/ios/50/FFFFFF/instagram-new.png" alt="Instgram" />,
-    name: <a href="https://www.instagram.com/jerrrychen/"><img src="https://img.icons8.com/ios/24/13509d/instagram-new.png" alt="Instgram" /></a>,
+    icon: <a href="https://www.instagram.com/miso.dope/"><FontAwesomeIcon icon={faInstagram} className="h-10 w-10"/></a>,
+  },
+  youtube: {
+    icon: <a href="https://www.youtube.com/misodope/"><FontAwesomeIcon icon={faYoutube} className="h-10 w-10"/></a>,
   },
   github: {
-    icon: <img src="https://img.icons8.com/ios/50/FFFFFF/github.png" alt="Github" />,
-    name: <a href="https://github.com/misodope"><img src="https://img.icons8.com/ios/24/13509d/github.png" alt="Github" /></a>,
+    icon: <a href="https://github.com/misodope"><FontAwesomeIcon icon={faGithub} className="h-10 w-10"/></a>,
+  },
+  discord: {
+    icon: <a href="https://discord.gg/2FS5rsM"><FontAwesomeIcon icon={faDiscord} className="h-10 w-10"/></a>
   },
 };
 
 export const Social = () => {
   const socials = Object.keys(socialObject).map((social, _) => (
-    <div key={social} className="flex justify-center items-center my-6">
-      {socialObject[social].name}
+    <div key={social} className="mx-3">
+      {socialObject[social].icon}
     </div>
   ));
 
-  return <div className="social">{socials}</div>;
+  return <div className="flex justify-center items-center my-6">{socials}</div>;
 };
