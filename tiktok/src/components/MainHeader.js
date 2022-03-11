@@ -1,9 +1,11 @@
-import React from "react";
-import profile from "@images/Head2022.png";
-import logo from "@images/misodope_logo_169.png";
 import "./MainHeader.scss";
+
+import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+
+
+import profile from "@images/Head2022.png";
 
 const MainHeader = () => {
   return (
