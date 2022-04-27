@@ -1,15 +1,16 @@
-import React, { useEffect } from "react"
+import React, { useEffect } from "react";
 
 const RedirectTikTok = () => {
   useEffect(() => {
-    window.location.href = "https://tiktok.com/@misodope"
-  }, [])
+    window.location.href = "https://tiktok.com/@misodope";
+  }, []);
 
   return (
-    <p className="flex justify-center items-center font-bold text-lg animated pulse">
-      Redirecting to @MisoDope TikTok...
-    </p>
-  )
-}
+    <div className="w-full h-screen flex flex-col justify-center items-center">
+      <p>Oh look I can center a div</p>
+      <p className=" font-bold text-lg animated pulse infinite">Redirecting to @MisoDope TikTok...</p>
+    </div>
+  );
+};
 
-export default RedirectTikTok
+export default RedirectTikTok;
