@@ -5,10 +5,10 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react";
-import PropTypes from "prop-types";
+import React from "react"
+import PropTypes from "prop-types"
 
-import { Container } from "./Container";
+import { Container } from "./Container"
 
 const Layout = ({ children }) => {
   return (
@@ -17,11 +17,11 @@ const Layout = ({ children }) => {
         <main>{children}</main>
       </Container>
     </>
-  );
-};
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-};
+}
 
-export default Layout;
+export default Layout

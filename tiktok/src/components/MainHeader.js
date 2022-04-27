@@ -1,18 +1,19 @@
-import "./MainHeader.scss";
+import "./MainHeader.scss"
 
-import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
-
-import profile from "@images/Head2022.png";
+import profile from "@images/Head2022.png"
 
 const MainHeader = () => {
   return (
     <div className="header">
       <div className="mobile-header">
         <img className="w-32 h-32 mb-5" src={profile} alt="profile picture" />
-        <p className="text-xl tracking-wider flex justify-center items-center">@MisoDope</p>
+        <p className="text-xl tracking-wider flex justify-center items-center">
+          @MisoDope
+        </p>
         <div className="text-sm flex flex-col items-center">
           <p>Digital Creator</p>
           <p>Full Stack Engineer</p>
@@ -26,7 +27,7 @@ const MainHeader = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MainHeader;
+export default MainHeader

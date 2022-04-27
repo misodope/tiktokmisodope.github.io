@@ -1,7 +1,7 @@
-import React from "react";
+import React from "react"
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const setup = {
   Desk: {
@@ -51,10 +51,10 @@ const setupElements = Object.entries(setup).map(([key, item]) => {
 const DeskSetup = () => {
   return (
     <Layout>
-      <SEO title='desk setup affiliate links'/>
-      { setupElements }
+      <SEO title="desk setup affiliate links" />
+      {setupElements}
     </Layout>
   )
 }
 
-export default DeskSetup;
+export default DeskSetup

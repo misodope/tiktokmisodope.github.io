@@ -1,15 +1,13 @@
-import "./index.scss";
+import "./index.scss"
 
-import React from "react";
+import React from "react"
 
-import MainHeader from "@components/MainHeader";
-import Layout from "@components/layout";
-import Seo from "@components/seo";
-import Footer from "@components/Footer";
-import { Links } from "@components/Links";
-import { Social } from "@components/Social";
-
-
+import MainHeader from "@components/MainHeader"
+import Layout from "@components/layout"
+import Seo from "@components/seo"
+import Footer from "@components/Footer"
+import { Links } from "@components/Links"
+import { Social } from "@components/Social"
 
 const IndexPage = () => (
   <Layout>
@@ -21,6 +19,6 @@ const IndexPage = () => (
     </div>
     <Footer />
   </Layout>
-);
+)
 
-export default IndexPage;
+export default IndexPage

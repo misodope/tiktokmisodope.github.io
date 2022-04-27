@@ -1,6 +1,5 @@
-import * as React from 'react';
+import * as React from "react"
 
-export const Container = ({children}) =>
-  <div className="container mx-auto">
-    { children }
-  </div>;
+export const Container = ({ children }) => (
+  <div className="container mx-auto">{children}</div>
+)
