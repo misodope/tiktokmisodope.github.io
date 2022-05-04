@@ -35,9 +35,9 @@ const linkData = [
 ];
 
 export const Links = () => {
-  const linkElements = linkData.map((link) => {
+  const linkElements = linkData.map((link, i) => {
     return (
-      <a className="flex items-center link link__button cursor-pointer" href={link.url}>
+      <a className="flex items-center link link__button cursor-pointer" href={link.url} key={i}>
         <img className="rounded-full mr-5 w-8 h-8" src={link.icon} />
         {link.title}
       </a>

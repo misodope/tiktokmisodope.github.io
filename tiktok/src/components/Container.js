@@ -3,17 +3,10 @@ import * as React from "react";
 import "./FloatingSquares.scss";
 
 const FloatingSquares = () => (
-  <ul class="circles">
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+  <ul className="circles">
+    {[...Array(10)].map((_, i) => (
+      <li key={i}></li>
+    ))}
   </ul>
 );
 
