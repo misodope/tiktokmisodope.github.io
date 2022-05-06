@@ -6,7 +6,21 @@ const FloatingSquares = () => {
   const [pageHeight, setPageHeight] = useState(0);
 
   useEffect(() => {
-    setPageHeight(document.body.clientHeight);
+    const currentPageHeight = window.innerHeight > document.body.clientHeight ? window.innerHeight : document.body.clientHeight;
+
+    setPageHeight(currentPageHeight);
+
+    const handleResize = () => {
+      const currentPageHeight = window.innerHeight > document.body.clientHeight ? window.innerHeight : document.body.clientHeight;
+
+      setPageHeight(currentPageHeight);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (
