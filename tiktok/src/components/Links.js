@@ -5,13 +5,13 @@ import blind from "../images/Blind.png";
 import aa from "../images/AppAcademy.png";
 import FlexiSpot from "../images/FlexiSpot.png";
 import replit from "../images/ReplitLogo.png";
-import jobs from "../images/jobsicon.png";
+import excel from "../images/excellogo.jpeg";
 
 const linkData = [
   {
-    icon: jobs,
+    icon: excel,
     title: "Job Search Template",
-    url: "https://docs.google.com/spreadsheets/d/1ipEvKRYzXIS3ERa9FE5Iw7appsNLAfJpelDEE4r9nus/edit?usp=sharing",
+    url: "https://docs.google.com/spreadsheets/d/1ipEvKRYzXIS3ERa9FE5Iw7appsNLAfJpelDEE4r9nus",
   },
   {
     icon: blind,
