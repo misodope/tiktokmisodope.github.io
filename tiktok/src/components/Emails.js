@@ -43,36 +43,36 @@ const Emails = () => {
       setJoinClicked(true);
       const debounced = debounce(saveEmail, 1000);
 
-      debounced()
+      debounced();
+    }
 
+    //Comment
+    const loader = <FontAwesomeIcon className="emails__loader" icon={faSpinner} size="1x" color="white" rotation={90} />;
+
+    const emailInput = (
+      <div className="emails__container text-black">
+        <input type="email" onChange={onChange} placeholder="Your Email" />
+        <button onClick={onClick} disabled={joinClicked}>
+          {joinClicked ? loader : "Join"}
+        </button>
+      </div>
+    );
+
+    const emailSuccess = (
+      <div className="emails__success">
+        <span>Thanks! Stay tuned.</span>
+      </div>
+    );
+
+    const renderEmail = sent ? emailSuccess : emailInput;
+
+    return (
+      <div className="flex flex-col justify-center items-center mb-3">
+        <p>Join our family and subscribe for more content.</p>
+        <div className="mt-2">{renderEmail}</div>
+      </div>
+    );
   };
-
-  //Comment
-  const loader = <FontAwesomeIcon className="emails__loader" icon={faSpinner} size="1x" color="white" rotation={90} />;
-
-  const emailInput = (
-    <div className="emails__container text-black">
-      <input type="email" onChange={onChange} placeholder="Your Email" />
-      <button onClick={onClick} disabled={joinClicked}>
-        {joinClicked ? loader : "Join"}
-      </button>
-    </div>
-  );
-
-  const emailSuccess = (
-    <div className="emails__success">
-      <span>Thanks! Stay tuned.</span>
-    </div>
-  );
-
-  const renderEmail = sent ? emailSuccess : emailInput;
-
-  return (
-    <div className="flex flex-col justify-center items-center mb-3">
-      <p>Join our family and subscribe for more content.</p>
-      <div className="mt-2">{renderEmail}</div>
-    </div>
-  );
 };
 
 export default Emails;

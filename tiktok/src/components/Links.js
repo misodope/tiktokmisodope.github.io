@@ -5,8 +5,14 @@ import blind from "../images/Blind.png";
 import aa from "../images/AppAcademy.png";
 import FlexiSpot from "../images/FlexiSpot.png";
 import replit from "../images/ReplitLogo.png";
+import jobs from "../images/jobsicon.png";
 
 const linkData = [
+  {
+    icon: jobs,
+    title: "Job Search Template",
+    url: "https://docs.google.com/spreadsheets/d/1ipEvKRYzXIS3ERa9FE5Iw7appsNLAfJpelDEE4r9nus/edit?usp=sharing",
+  },
   {
     icon: blind,
     title: "Download Blind - An open space for professionals to talk about ANYTHING",
