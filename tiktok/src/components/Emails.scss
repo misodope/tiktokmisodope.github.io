@@ -10,8 +10,8 @@
     }
 
     input {
-      border: 1px solid $main-blue;
-      width: 140px;
+      border: 1px solid $yellow;
+      width: 100%;
       height: 33px;
       padding: 0 10px;
       border-radius: 5px;
@@ -21,13 +21,12 @@
       }
 
       &::placeholder {
-        color: $main-blue;
+        color: $black;
       }
     }
 
     button {
-      background-color: $main-blue;
-      color: white;
+      background-color: $yellow;
       width: 93px;
       height: 35px;
       border: none;
