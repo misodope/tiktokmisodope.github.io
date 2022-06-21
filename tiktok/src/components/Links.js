@@ -1,4 +1,7 @@
 import React from "react";
+
+import classNames from "classnames";
+
 import "./Links.scss";
 import zipRecruiterIcon from "../images/ZipRecruiter.png";
 import blind from "../images/Blind.png";
@@ -6,12 +9,20 @@ import aa from "../images/AppAcademy.png";
 import FlexiSpot from "../images/FlexiSpot.png";
 import replit from "../images/ReplitLogo.png";
 import excel from "../images/excellogo.jpeg";
+import aws from "../images/aws.png";
 
 const linkData = [
   {
-    icon: excel,
-    title: "Job Search Template",
-    url: "https://docs.google.com/spreadsheets/d/1ipEvKRYzXIS3ERa9FE5Iw7appsNLAfJpelDEE4r9nus",
+    icon: aws,
+    title: "Amazon Web Services - Architecture Center",
+    url: "https://viraln.link/JC_AWS_TT2",
+    className: "w-10 h-10 mr-2",
+  },
+  {
+    icon: aws,
+    title: "Amazon Web Services - Observability",
+    url: "https://viraln.link/JC_AWS_TT1",
+    className: "w-10 h-10 mr-2",
   },
   {
     icon: blind,
@@ -22,6 +33,11 @@ const linkData = [
     icon: replit,
     title: "Try Replit the best free online code editor",
     link: "https://repl.it/@misodope/",
+  },
+  {
+    icon: excel,
+    title: "Job Search Template",
+    url: "https://docs.google.com/spreadsheets/d/1ipEvKRYzXIS3ERa9FE5Iw7appsNLAfJpelDEE4r9nus",
   },
   {
     icon: zipRecruiterIcon,
@@ -42,9 +58,11 @@ const linkData = [
 
 export const Links = () => {
   const linkElements = linkData.map((link, i) => {
+    const imgClass = classNames("rounded-full mr-5 w-8 h-8", { [link.className]: Boolean(link.className) });
+
     return (
       <a className="flex items-center link link__button cursor-pointer" href={link.url} key={i}>
-        <img className="rounded-full mr-5 w-8 h-8" src={link.icon} />
+        <img className={imgClass} src={link.icon} />
         {link.title}
       </a>
     );
