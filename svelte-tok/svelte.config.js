@@ -11,9 +11,11 @@ const config = {
     adapter: adapter({
       pages: "build",
       assets: "build",
+      fallback: null,
     }),
-    base: "/",
-    target: "#svelte",
+    prerender: {
+      default: true,
+    },
   },
 };
 
