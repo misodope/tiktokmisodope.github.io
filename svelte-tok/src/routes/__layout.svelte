@@ -2,4 +2,6 @@
   import "../styles/global.css";
 </script>
 
-<slot />
+<div class="container mx-auto flex flex-col items-center">
+  <slot />
+</div>
