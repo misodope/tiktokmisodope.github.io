@@ -11,7 +11,6 @@ declare namespace App {
 }
 
 declare module "@fortawesome/pro-solid-svg-icons/index.es" {
-  export * from "@fortawesome/pro-solid-svg-icons";
   export * from "@fortawesome/free-solid-svg-icons";
   export * from "@fortawesome/free-brands-svg-icons";
 }
