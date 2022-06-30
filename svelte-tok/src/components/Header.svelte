@@ -1,6 +1,7 @@
 <script>
 	import Icon from 'svelte-fa';
-	import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
+	import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
 </script>
 
 <div class="flex flex-col items-center justify-center">

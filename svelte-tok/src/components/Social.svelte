@@ -1,12 +1,11 @@
 <script>
 	import Icon from 'svelte-fa';
-	import {
-		faTiktok,
-		faYoutube,
-		faDiscord,
-		faGithub,
-		faInstagram
-	} from '@fortawesome/free-brands-svg-icons';
+
+	import { faTiktok } from '@fortawesome/free-brands-svg-icons/faTiktok';
+	import { faYoutube } from '@fortawesome/free-brands-svg-icons/faYoutube';
+	import { faDiscord } from '@fortawesome/free-brands-svg-icons/faDiscord';
+	import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
+	import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
 
 	const socialsMap = [
 		{
