@@ -1,3 +1,8 @@
+<script>
+  import Icon from "svelte-fa";
+  import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+</script>
+
 <div class="flex flex-col items-center justify-center">
   <div class="flex flex-col items-center">
     <img class="w-32 h-32 mb-5" src="/Head2022.png" alt="profile" />
@@ -11,7 +16,7 @@
     <div class="flex flex-col items-center text-sm my-4">
       <p>E-mail for all business inquiries</p>
       <div class="flex items-center">
-        <!-- <FontAwesomeIcon icon={faEnvelope} class="mx-2 text-base" /> -->
+        <Icon icon={faEnvelope} class="mx-2 text-base" />
         <p class="font-bold">jerry@misodope.com</p>
       </div>
     </div>
