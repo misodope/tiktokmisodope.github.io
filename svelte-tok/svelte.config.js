@@ -21,7 +21,7 @@ const config = {
     prerender: {
       default: true,
     },
-    appDir: "app",
+    appDir: "_app",
   },
 };
 
