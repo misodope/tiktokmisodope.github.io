@@ -47,7 +47,7 @@
 	];
 </script>
 
-<div class="flex flex-col w-full md:w-100 lg:w-100 xl:w-100 2xl:w-100 text-sm">
+<div class="flex flex-col w-full md:w-[450px] lg:w-[450px] text-sm">
 	{#each linksMap as link}
 		<a
 			class="transition-colors duration-500 flex items-center p-2.5 my-2.5 rounded-md cursor-pointer text-left bg-amber-300 text-black hover:text-amber-300 hover:bg-black"

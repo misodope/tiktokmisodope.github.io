@@ -1,9 +1,9 @@
 <script>
 	import { onMount } from 'svelte';
 
-	onMount(() => {
-		window.location.href = 'https://tiktok.com/@misodope';
-	});
+	// onMount(() => {
+	// 	window.location.href = 'https://tiktok.com/@misodope';
+	// });
 </script>
 
 <div class="w-full h-screen flex flex-col justify-center items-center">
