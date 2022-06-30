@@ -1,4 +1,6 @@
 <script>
+	import { base } from '$app/paths';
+
 	const linksMap = [
 		{
 			icon: '/aws.png',
@@ -52,7 +54,7 @@
 			href={link.url}
 		>
 			<img
-				src={link.icon}
+				src={base + link.icon}
 				class={`rounded-full mr-5 w-8 h-8 ${link.className ?? ''}`}
 				alt={link.icon}
 			/>

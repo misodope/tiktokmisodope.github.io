@@ -1,12 +1,13 @@
 <script>
 	import Icon from 'svelte-fa';
+	import { base } from '$app/paths';
 
 	import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
 </script>
 
 <div class="flex flex-col items-center justify-center">
 	<div class="flex flex-col items-center">
-		<img class="w-32 h-32 mb-5" src="/Head2022.png" alt="profile" />
+		<img class="w-32 h-32 mb-5" src="{base}/Head2022.png" alt="profile" />
 		<p class="text-xl tracking-wider flex justify-center items-center">@MisoDope</p>
 		<div class="text-sm flex flex-col items-center">
 			<p>Digital Creator</p>

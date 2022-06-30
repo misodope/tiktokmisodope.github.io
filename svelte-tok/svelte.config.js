@@ -16,8 +16,12 @@ const config = {
       fallback: null,
     }),
     paths: {
-      base: dev ? "" : "/tiktokmisodope.github.io",
+      base: "",
     },
+    prerender: {
+      default: true,
+    },
+    appDir: "app",
   },
 };
 
