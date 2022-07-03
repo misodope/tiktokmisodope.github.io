@@ -1,5 +1,10 @@
+<script>
+	import Floaters from "../components/Floaters.svelte";
+</script>
+
 <div class="container mx-auto px-8 flex flex-col items-center">
 	<slot />
+	<Floaters />
 </div>
 
 <style global>
