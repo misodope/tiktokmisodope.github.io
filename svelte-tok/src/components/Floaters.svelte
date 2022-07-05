@@ -16,16 +16,12 @@
 
     window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    return () =>window.removeEventListener("resize", handleResize);
   })
-
-  const squares = [...Array(10)];
 </script>
 
 <ul class="circles" style="height: {pageHeight}px">
-  {#each squares as _, i}
+  {#each Array(10) as _}
     <li />
   {/each}
 </ul>
