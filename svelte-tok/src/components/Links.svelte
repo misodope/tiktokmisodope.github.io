@@ -29,21 +29,6 @@
 			title: 'Job Search Template',
 			url: 'https://docs.google.com/spreadsheets/d/1ipEvKRYzXIS3ERa9FE5Iw7appsNLAfJpelDEE4r9nus'
 		},
-		{
-			icon: '/ZipRecruiter.png',
-			title: 'Join ZipRecruiter and get employed',
-			url: 'https://www.ziprecruiter.com/misodope'
-		},
-		{
-			icon: '/AppAcademy.png',
-			title: 'App Academy Open to learn code',
-			url: 'https://open.appacademy.io/signup/free?utm_source=partner&utm_medium=tiktok&utm_campaign=miso-dope&utm_content=open'
-		},
-		{
-			icon: '/FlexiSpot.png',
-			title: 'FlexiSpot Standing Desks',
-			url: 'http://flexispot.refr.cc/misodope'
-		}
 	];
 </script>
 
