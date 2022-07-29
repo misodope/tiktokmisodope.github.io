@@ -2,8 +2,9 @@
   import { onMount } from "svelte";
   import Loader from "../components/Loader.svelte";
 
-  const appId = import.meta.env.VITE_SQUARE_SANDBOX_APP_ID;
-  const locationId = import.meta.env.VITE_SQUARE_LOCATION_ID;
+  const isDev = import.meta.env.DEV;
+  const appId = isDev ? import.meta.env.VITE_SQUARE_SANDBOX_APP_ID : import.meta.env.VITE_SQUARE_P_APP_ID;
+  const locationId = isDev ? import.meta.env.VITE_SQUARE_LOCATION_ID : import.meta.env.VITE_SQUARE_P_LOCATION_ID;
 
   let loading = true;
 
