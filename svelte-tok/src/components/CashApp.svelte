@@ -49,13 +49,13 @@
   onMount(() => {
     cashAppPayment();
   })
-
 </script>
 
-<div>
+<div class="flex flex-col items-center w-full md:w-[450px] lg:w-[450px] text-sm p-2.5 my-2.5 rounded-md text-left bg-amber-300 text-black">
   {#if loading}
     <Loader />
   {:else}
-   <div id="cash-app-pay" />
+    <p class="text-black text-base font-bold mb-[10px]">Enter to win Jackpot - $1 to play!</p>
+    <div id="cash-app-pay"  />
   {/if}
 </div>

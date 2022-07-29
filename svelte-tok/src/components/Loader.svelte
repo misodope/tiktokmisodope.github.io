@@ -1,10 +1,10 @@
 <script lang="ts">
   import type { SpinnerTypes } from "../types/loader.js";
   
-  export let color: SpinnerTypes["color"] = "#fcd34e";
-  export let unit: SpinnerTypes["unit"] = "px";
-  export let duration: SpinnerTypes["duration"] = "0.75s";
-  export let size: SpinnerTypes["size"] = "50";
+  const color: SpinnerTypes["color"] = "#000";
+  const unit: SpinnerTypes["unit"] = "px";
+  const duration: SpinnerTypes["duration"] = "0.75s";
+  const size: SpinnerTypes["size"] = "50";
 </script>
 
 <style>
