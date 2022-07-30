@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { SpinnerTypes } from "../types/loader.js";
   
-  const color: SpinnerTypes["color"] = "#000";
+  const color: SpinnerTypes["color"] = "#fbd91d";
   const unit: SpinnerTypes["unit"] = "px";
   const duration: SpinnerTypes["duration"] = "0.75s";
   const size: SpinnerTypes["size"] = "50";

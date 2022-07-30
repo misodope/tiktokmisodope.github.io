@@ -19,7 +19,7 @@
 	h4,
 	h5,
 	h6 {
-		color: #fbd91d;
+		color: #fcd34e;
 	}
 
 	body {

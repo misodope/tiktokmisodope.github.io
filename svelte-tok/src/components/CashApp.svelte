@@ -8,6 +8,21 @@
 
   let loading = true;
 
+  interface CashAppPay {
+    addEventListener: Function;
+    attach: Function; 
+  }
+
+  const renderPaymentCompleted = () => {
+    const cashAppElement = document.getElementById("cash-app-pay");
+    const lastChild = cashAppElement?.lastElementChild;
+
+    const pElement = document.createElement("p");
+    pElement.innerHTML = "Cash App Payment Complete!"
+    
+    lastChild && cashAppElement?.replaceChild(pElement, lastChild);
+  }
+
   const cashAppPayment = () => {
     const payments = window.Square.payments(appId, locationId);
 
@@ -25,14 +40,12 @@
       referenceId: "misodope-cash-app-pay"
     }
 
-    payments.cashAppPay(request, options)
-      .then((cashAppPay: any) => {
+    return payments.cashAppPay(request, options)
+      .then((cashAppPay: CashAppPay) => {
         cashAppPay.addEventListener('ontokenization', (event: any) => {
           const { tokenResult } = event.detail;
-          const tokenStatus = tokenResult.status;
-          if (tokenStatus === 'OK') {
-            const token = tokenResult.token;
-            console.log("When does this happen", token)
+          if (tokenResult.status === 'OK') {
+            renderPaymentCompleted();
           }
         });
 
@@ -40,10 +53,18 @@
 
         return cashAppPay;
       })
-      .then((cashAppPay: any) => {
-        cashAppPay.attach('#cash-app-pay');
+      .then((cashAppPay: CashAppPay) => {
+        const cashAppButtonStyles = {
+          theme: "light",
+          values: "light",
+        }
+
+        cashAppPay.attach('#cash-app-pay', cashAppButtonStyles);
 
         return cashAppPay;
+      })
+      .catch((err: Error) => {
+        console.error(err);
       })
   }
 
@@ -52,11 +73,11 @@
   })
 </script>
 
-<div class="flex flex-col items-center w-full md:w-[450px] lg:w-[450px] text-sm p-2.5 my-2.5 rounded-md text-left bg-amber-300 text-black">
+<div class="mb-3 flex flex-col items-center">
   {#if loading}
     <Loader />
   {:else}
-    <p class="text-black text-base font-bold mb-[10px]">Enter to win Jackpot - $1 to play!</p>
-    <div id="cash-app-pay"  />
+    <p class="text-amber-300 text-lg font-bold mb-[10px]">Get MisoDope Coffee! - $1</p>
+    <div id="cash-app-pay" />
   {/if}
 </div>
