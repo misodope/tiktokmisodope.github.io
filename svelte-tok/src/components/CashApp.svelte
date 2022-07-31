@@ -45,14 +45,7 @@
 		};
 
 		try {
-			const cashAppPay: CashAppPay = await payments.cashAppPay(request, options);
-
-			cashAppPay.addEventListener('ontokenization', (event: any) => {
-				const { tokenResult } = event.detail;
-				if (tokenResult.status === 'OK') {
-					renderPaymentCompleted();
-				}
-			});
+			const cashAppPay = await payments.cashAppPay(request, options);
 
 			if (cashAppPay) loading = false;
 
@@ -63,7 +56,14 @@
 	};
 
 	onMount(async () => {
-		const cashAppPay = await cashAppPayment();
+		const cashAppPay: CashAppPay = await cashAppPayment();
+
+		cashAppPay.addEventListener('ontokenization', (event: any) => {
+			const { tokenResult } = event.detail;
+			if (tokenResult.status === 'OK') {
+				renderPaymentCompleted();
+			}
+		});
 
 		const cashAppButtonStyles = {
 			theme: 'light',
