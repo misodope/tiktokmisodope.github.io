@@ -3,6 +3,11 @@
 
 	const linksMap = [
 		{
+			icon: '/cashapp.png',
+			title: "Implement CashApp using Square's Web Payments API",
+			url: 'https://obvs.ly/misodope'
+		},
+		{
 			icon: '/aws.png',
 			title: 'Amazon Web Services - Architecture Center',
 			url: 'https://viraln.link/JC_AWS_TT2',
@@ -28,7 +33,7 @@
 			icon: '/excellogo.jpeg',
 			title: 'Job Search Template',
 			url: 'https://docs.google.com/spreadsheets/d/1ipEvKRYzXIS3ERa9FE5Iw7appsNLAfJpelDEE4r9nus'
-		},
+		}
 	];
 </script>
 
