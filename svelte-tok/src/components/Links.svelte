@@ -35,6 +35,14 @@
 			url: 'https://docs.google.com/spreadsheets/d/1ipEvKRYzXIS3ERa9FE5Iw7appsNLAfJpelDEE4r9nus'
 		}
 	];
+
+	const items = [];
+
+	for (let i = 0; i < linksMap.length; i++) {
+		const link = linksMap[i];
+
+		console.log(link.title);
+	}
 </script>
 
 <div class="flex flex-col w-full md:w-[450px] lg:w-[450px] text-sm">
