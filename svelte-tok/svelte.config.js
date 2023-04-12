@@ -1,23 +1,25 @@
-import adapter from "@sveltejs/adapter-static";
+import adapter from "@sveltejs/adapter-auto";
 import preprocess from "svelte-preprocess";
+import path from "path"
+import { vitePreprocess } from "@sveltejs/kit/vite";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   // Consult https://github.com/sveltejs/svelte-preprocess
   // for more information about preprocessors
-  preprocess: preprocess({ postcss: true }),
+  preprocess: preprocess([{ postcss: true }, vitePreprocess]),
 
   kit: {
     adapter: adapter({
       pages: "build",
       assets: "build",
-      fallback: "200.html",
+      fallback: null,
     }),
     paths: {
       base: "",
     },
     prerender: {
-      default: true,
+      entries: ["*"],
     },
     appDir: "_app",
   },

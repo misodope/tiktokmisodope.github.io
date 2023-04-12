@@ -2,11 +2,11 @@
 	"name": "svelte-tok",
 	"version": "0.0.1",
 	"scripts": {
-		"start": "npm run dev",
-		"dev": "svelte-kit dev",
-		"build": "svelte-kit build",
+		"start": "pnpm dev",
+		"dev": "vite",
+		"build": "vite build",
 		"package": "svelte-kit package",
-		"preview": "svelte-kit preview",
+		"preview": "vite preview",
 		"prepare": "svelte-kit sync",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
@@ -38,6 +38,7 @@
 		"@fortawesome/free-brands-svg-icons": "^6.1.1",
 		"@fortawesome/free-solid-svg-icons": "^6.1.1",
 		"@sveltejs/adapter-static": "^1.0.0-next.34",
+		"@sveltejs/vite-plugin-svelte": "^2.0.4",
 		"dotenv": "^16.0.1",
 		"gh-pages": "^4.0.0",
 		"svelte-fa": "^3.0.2"
