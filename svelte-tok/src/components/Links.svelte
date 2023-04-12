@@ -3,6 +3,16 @@
 
 	const linksMap = [
 		{
+			icon: '/microsoft.png',
+			title: 'Microsoft Power Apps - Build apps blazingly fast with low code',
+			url: 'https://aka.ms/misodope'
+		},
+		{
+			icon: '/invision.png',
+			title: 'Freehand by InVision - Try the collaborative whiteboarding experience free!',
+			url: 'https://freehandapp.com/'
+		},
+		{
 			icon: '/cashapp.png',
 			title: "Implement CashApp using Square's Web Payments API",
 			url: 'https://obvs.ly/misodope'
@@ -20,29 +30,11 @@
 			className: 'w-10 h-10 mr-2'
 		},
 		{
-			icon: '/Blind.png',
-			title: 'Download Blind - An open space for professionals to talk about ANYTHING',
-			url: 'https://teamblind.onelink.me/enIS/misodope'
-		},
-		{
-			icon: '/ReplitLogo.png',
-			title: 'Try Replit the best free online code editor',
-			link: 'https://repl.it/@misodope/'
-		},
-		{
 			icon: '/excellogo.jpeg',
 			title: 'Job Search Template',
 			url: 'https://docs.google.com/spreadsheets/d/1ipEvKRYzXIS3ERa9FE5Iw7appsNLAfJpelDEE4r9nus'
 		}
 	];
-
-	const items = [];
-
-	for (let i = 0; i < linksMap.length; i++) {
-		const link = linksMap[i];
-
-		console.log(link.title);
-	}
 </script>
 
 <div class="flex flex-col w-full md:w-[450px] lg:w-[450px] text-sm">

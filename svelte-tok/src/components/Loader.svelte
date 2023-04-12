@@ -7,7 +7,9 @@
 	const size: SpinnerTypes['size'] = '50';
 </script>
 
-<div class="circle" style="--size: {size}{unit}; --color: {color}; --duration: {duration}" />
+<div>
+	<div class="circle" style="--size: {size}{unit}; --color: {color}; --duration: {duration}" />
+</div>
 
 <style>
 	.circle {
