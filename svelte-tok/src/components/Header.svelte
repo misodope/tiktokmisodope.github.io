@@ -17,7 +17,7 @@
 			<p>E-mail for all business inquiries</p>
 			<div class="flex items-center">
 				<Icon icon={faEnvelope} class="mx-2 text-base" />
-				<p class="font-bold">jerry@misodope.com</p>
+				<a class="font-bold" href="mailto:jerry@misodope.com">jerry@misodope.com</a>
 			</div>
 		</div>
 	</div>

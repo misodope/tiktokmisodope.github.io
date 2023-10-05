@@ -38,9 +38,25 @@
 </script>
 
 <div class="flex flex-col w-full md:w-[450px] lg:w-[450px] text-sm">
+	<a
+	class="flex items-center justify-center gap-3 my-2 rounded-md cursor-pointer text-amber-300 font-bold hover:text-amber-400 transition-colors"
+	href={"https://benable.com/misodope"}
+>
+	<img
+		src="https://img.icons8.com/emoji/48/backhand-index-pointing-right-emoji.png"
+		alt="backhand-index-pointing-right-emoji"
+		class="animate-pulse"
+	/>
+	Checkout my desk setup and favorite gear!
+	<img
+		src={"https://img.icons8.com/emoji/48/backhand-index-pointing-left-emoji.png"}
+		alt={"Left Pointer Icon"}
+		class="animate-pulse"
+	/>
+</a>
 	{#each linksMap as link}
 		<a
-			class="transition-colors duration-500 flex items-center p-2.5 my-2.5 rounded-md cursor-pointer text-left bg-amber-300 text-black hover:text-amber-300 hover:bg-black"
+			class="transition-colors duration-500 flex items-center p-2.5 my-2.5 rounded-md cursor-pointer text-left bg-amber-300 text-black hover:text-amber-300 hover:bg-slate-900"
 			href={link.url}
 		>
 			<img
