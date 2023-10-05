@@ -45,7 +45,7 @@
 	<img
 		src="https://img.icons8.com/emoji/48/backhand-index-pointing-right-emoji.png"
 		alt="backhand-index-pointing-right-emoji"
-		class="animate-pulse"
+		class="animate-pulse md:w-12 md:h-12"
 	/>
 	Checkout my desk setup and favorite gear!
 	<img
