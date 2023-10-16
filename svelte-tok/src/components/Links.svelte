@@ -39,20 +39,15 @@
 
 <div class="flex flex-col w-full md:w-[450px] lg:w-[450px] text-sm">
 	<a
-	class="flex items-center justify-center gap-3 my-2 rounded-md cursor-pointer text-amber-300 font-bold hover:text-amber-400 transition-colors"
+	class="flex items-center justify-center gap-3 my-2 rounded-md cursor-pointer text-amber-300 font-bold hover:text-amber-400 transition-colors text-xs"
 	href={"https://benable.com/misodope"}
 >
 	<img
 		src="https://img.icons8.com/emoji/48/backhand-index-pointing-right-emoji.png"
 		alt="backhand-index-pointing-right-emoji"
-		class="animate-pulse md:w-12 md:h-12"
+		class="animate-pulse md:w-10 md:h-10 w-8 h-8"
 	/>
-	Checkout my desk setup and favorite gear!
-	<img
-		src={"https://img.icons8.com/emoji/48/backhand-index-pointing-left-emoji.png"}
-		alt={"Left Pointer Icon"}
-		class="animate-pulse"
-	/>
+	<p>Checkout my desk setup and favorite gear!</p>
 </a>
 	{#each linksMap as link}
 		<a
