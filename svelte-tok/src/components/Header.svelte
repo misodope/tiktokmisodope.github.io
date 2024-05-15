@@ -8,7 +8,7 @@
 <div class="flex flex-col items-center justify-center mt-8">
 	<div class="flex flex-col items-center">
 		<img class="w-32 h-32 mb-5" src="{base}/Head2022.png" alt="profile" />
-		<p class="text-xl tracking-wider flex justify-center items-center">@MisoDope</p>
+		<p class="text-xl tracking-wider flex justify-center items-center">Jerry Chen | @MisoDope</p>
 		<div class="text-sm flex flex-col items-center">
 			<p>Digital Creator</p>
 			<p>Full Stack Engineer</p>
