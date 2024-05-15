@@ -3,14 +3,14 @@
 
 	const linksMap = [
 		{
+			icon: '/jetbrains.png',
+			title: 'JetBrains IDEs - an exceptional developer experience',
+			url: 'https://jb.gg/Check-JetBrains-IDEs'
+		},
+		{
 			icon: '/microsoft.png',
 			title: 'Microsoft Power Apps - Build apps blazingly fast with low code',
 			url: 'https://aka.ms/misodope'
-		},
-		{
-			icon: '/invision.png',
-			title: 'Freehand by InVision - Try the collaborative whiteboarding experience free!',
-			url: 'https://freehandapp.com/'
 		},
 		{
 			icon: '/cashapp.png',
@@ -31,7 +31,7 @@
 		},
 		{
 			icon: '/excellogo.jpeg',
-			title: 'Job Search Template',
+			title: 'Job Search Template - Free! Just Copy & Paste',
 			url: 'https://docs.google.com/spreadsheets/d/1ipEvKRYzXIS3ERa9FE5Iw7appsNLAfJpelDEE4r9nus'
 		}
 	];

@@ -31,7 +31,7 @@
 	];
 </script>
 
-<div class="flex justify-center items-center mb-6 mt-2">
+<div class="flex justify-center items-center mb-3 mt-2">
 	{#each socialsMap as { icon, link }}
 		<a href={link} class="mx-3">
 			<Icon {icon} class="!h-10 !w-10" />
