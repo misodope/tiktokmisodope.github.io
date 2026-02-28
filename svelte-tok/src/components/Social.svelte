@@ -31,10 +31,10 @@
 	];
 </script>
 
-<div class="flex justify-center items-center mb-3 mt-2">
+<div class="flex items-center gap-4">
 	{#each socialsMap as { icon, link }}
-		<a href={link} class="mx-3">
-			<Icon {icon} class="!h-10 !w-10" />
+		<a href={link} class="text-amber-400/70 hover:text-amber-300 transition-colors">
+			<Icon {icon} class="!h-6 !w-6" />
 		</a>
 	{/each}
 </div>

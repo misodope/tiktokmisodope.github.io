@@ -41,6 +41,8 @@
 		"@sveltejs/vite-plugin-svelte": "^2.4.6",
 		"dotenv": "^16.3.1",
 		"gh-pages": "^4.0.0",
-		"svelte-fa": "^3.0.4"
+		"svelte-fa": "^3.0.4",
+		"three": "^0.170.0",
+		"vite": "^7.3.1"
 	}
 }

@@ -5,7 +5,7 @@
 	import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
 </script>
 
-<div class="flex flex-col items-center justify-center mt-8">
+<div class="flex flex-col items-center justify-center">
 	<div class="flex flex-col items-center">
 		<img class="w-32 h-32 mb-5" src="{base}/headshot2.png" alt="profile" />
 		<p class="text-xl tracking-wider flex justify-center items-center font-semibold">Jerry Chen | @MisoDope</p>
