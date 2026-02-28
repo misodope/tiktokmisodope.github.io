@@ -18,9 +18,9 @@
       <div class="flex flex-col">
         <div class="flex items-center justify-between mb-5 lg:block lg:mb-0">
           <div>
-            <p class="text-amber-500 text-xs uppercase tracking-[0.35em] font-bold mb-3">@MisoDope</p>
+            <p class="text-amber-500 text-xs uppercase tracking-[0.35em] font-bold mb-3">Jerry Chen</p>
             <h1 class="text-5xl lg:text-9xl font-black leading-none tracking-tight lg:mb-5">
-              Jerry<br />Chen
+              @MisoDope
             </h1>
           </div>
           <img
